@@ -1,7 +1,7 @@
 ---
 title: Allowing All Traffic Through an Oracle Cloud VM
 created: '2021-05-11T19:33:30.537Z'
-modified: '2021-05-12T10:53:49.632Z'
+modified: '2021-05-12T10:56:05.171Z'
 ---
 
 # Allowing All Traffic Through an Oracle Cloud VM
@@ -16,7 +16,7 @@ To save current IPTABLES rules to a file:
 sudo iptables-save > ~/iptables-rules
 ```
 
-Effectively *DISABLE* IPTABLES by following commands:
+Effectively **DISABLE** IPTABLES by following commands:
 ```sh
 iptables -P INPUT ACCEPT
 iptables -P OUTPUT ACCEPT
@@ -25,7 +25,7 @@ iptables -F
 ```
 
 ## Saving IPTABLES Configuration
-The IPTABLES configuration is not persistent and will be reset at next boot, to make it persistent, you'll have to install *iptables-persistent*
+The IPTABLES configuration is not persistent and will be reset at next boot, to make it persistent, you'll have to install **iptables-persistent**
 ```sh
 sudo apt-get install iptables-persistent
 ```
